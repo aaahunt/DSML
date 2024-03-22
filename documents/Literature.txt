@@ -1,0 +1,6 @@
+Moccia, Sara et al. “Automated Classification of Hand Gestures Using a Wristband and Machine Learning for Possible Application in Pill Intake Monitoring.” Computer methods and programs in biomedicine 219 (2022): 106753–106753. Web.
+Odhiambo, Chrisogonas Odero et al. “Detecting Medication-Taking Gestures Using Machine Learning and Accelerometer Data Collected via Smartwatch Technology: Instrument Validation Study.” JMIR human factors 10 (2023): e42714–e42714. Web.
+Zhao, Shenglin et al. “Hand Gesture Recognition on a Resource-Limited Interactive Wristband.” Sensors (Basel, Switzerland) 21.17 (2021): 5713. Web.
+Siddiqui, Uzma Abid et al. “Wearable-Sensors-Based Platform for Gesture Recognition of Autism Spectrum Disorder Children Using Machine Learning Algorithms.” Sensors (Basel, Switzerland) 21.10 (2021): 3319. Web.
+Yu, Yi et al. “Exploration of Chinese Sign Language Recognition Using Wearable Sensors Based on Deep Belief Net.” IEEE journal of biomedical and health informatics 24.5 (2020): 1310–1320. Web.
+Han H, Yoon SW. Gyroscope-Based Continuous Human Hand Gesture Recognition for Multi-Modal Wearable Input Device for Human Machine Interaction. Sensors (Basel). 2019 Jun 5;19(11):2562. doi: 10.3390/s19112562. https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6603535/
