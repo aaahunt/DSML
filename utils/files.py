@@ -88,7 +88,7 @@ def process_zip(gesture):
     file_index = find_highest_numbered_file(gesture_dir)
 
     for filename in os.listdir(unprocessed_dir): 
-        if filename.startswith('Acceleration') and filename.endswith('.zip'):
+        if filename.endswith('.zip'):
 
             zip_file_path = os.path.join(unprocessed_dir, filename)
             
