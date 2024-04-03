@@ -22,8 +22,8 @@ def get_data_from_files(scaler=None, number_of_rows_to_trim=0):
     """
     sheets = []
     for gesture in get_gestures():
-        for i in get_file_numbers(gesture):
-            data = pd.read_csv(f'data/{gesture}/{i}.csv')
+        for i, file in enumerate(get_gesture_csvs(gesture)):
+            data = pd.read_csv(f'data/{gesture}/{file}')
             data.columns = get_columns()
 
             data = data.iloc[number_of_rows_to_trim:-number_of_rows_to_trim]
@@ -127,7 +127,7 @@ def process_all_zips():
             else:
                 print(f"No unprocessed files found for {gesture}")
 
-def get_file_numbers(gesture):
+def get_gesture_csvs(gesture):
       """
       Get all the files for a specific gesture.
       
@@ -138,5 +138,5 @@ def get_file_numbers(gesture):
       list: A list of all the files for the specified gesture
       """
       gesture_dir = os.path.join(DATA_DIR, gesture)
-      return [file.split('.')[0] for file in os.listdir(gesture_dir) if file.endswith('.csv')]
+      return [file for file in os.listdir(gesture_dir) if file.endswith('.csv')]
 

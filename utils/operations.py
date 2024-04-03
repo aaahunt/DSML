@@ -27,21 +27,21 @@ def merge_and_average_integers(integers, cluster_range=50):
       
       return [sum(cluster) // len(cluster) for cluster in clusters]
 
-def indices_below_threshold(data, rolling_window, group_threshold):
+def indices_below_threshold(data, rolling_window, group_threshold, deviation_threshold):
       
       rolling_std = data['accel_abs'].rolling(window=rolling_window).std()
-      threshold = rolling_std.mean() - rolling_std.std() / 1.5
+      threshold = rolling_std.mean() - rolling_std.std() / deviation_threshold
 
       return rolling_std[(rolling_std.shift(-group_threshold) < threshold) & (rolling_std.shift(group_threshold) < threshold)].index
 
-def drop_indices_where_data_never_exceeds(df, filter_column, threshold, rolling_window, group_threshold):
+def label_gestures(df, filter_column, threshold, rolling_window, group_threshold, deviation_threshold):
             
       indices_to_drop = []
       gesture_number = 1
 
-      for i, sub_group in df.groupby('file_number'):
+      for i, sub_group in df.groupby(['file_number', 'gesture']):
 
-            below_threshold = indices_below_threshold(sub_group, rolling_window, group_threshold)
+            below_threshold = indices_below_threshold(sub_group, rolling_window, group_threshold, deviation_threshold)
             breakpoints = merge_and_average_integers(below_threshold, 25)
 
             breakpoints.insert(0, sub_group.index[0])
@@ -53,10 +53,7 @@ def drop_indices_where_data_never_exceeds(df, filter_column, threshold, rolling_
                   if all_below_threshold:
                         dropping = range(breakpoints[b], breakpoints[b + 1])
                         indices_to_drop += dropping
-                        # print(f'Dropping {len(dropping)} rows from file {i} ({breakpoints[b]}:{breakpoints[b + 1]})')
                   else:
-                        ## Label
-                        # print(f'Labeling {len(segment)} rows from file {i} ({breakpoints[b]}:{breakpoints[b + 1]}) as gesture {gesture_number}')
                         df.loc[breakpoints[b]:breakpoints[b + 1], 'gesture_number'] = int(gesture_number)
                         gesture_number += 1
 
