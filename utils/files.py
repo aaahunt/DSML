@@ -5,10 +5,11 @@ import shutil
 import zipfile
 import re
 import pandas as pd
+import math
 
 DATA_DIR = os.path.join(os.getcwd(), "data")
 
-def get_data_from_files(scaler=None, number_of_rows_to_trim=0):
+def get_data_from_files(scaler=None, number_of_rows_to_trim=0, test_percentage=0.2):
     """
     Reads data from multiple files and returns a concatenated DataFrame.
 
@@ -20,9 +21,15 @@ def get_data_from_files(scaler=None, number_of_rows_to_trim=0):
         pd.DataFrame: Concatenated DataFrame containing the data from all files.
 
     """
-    sheets = []
+    training_data = []
+    testing_data = []
+
     for gesture in get_gestures():
-        for i, file in enumerate(get_gesture_csvs(gesture)):
+        csvs = get_gesture_csvs(gesture)
+        num_of_files = len(csvs)
+        testing_files = math.ceil(num_of_files * test_percentage)
+
+        for i, file in enumerate(csvs):
             data = pd.read_csv(f'data/{gesture}/{file}')
             data.columns = get_columns()
 
@@ -36,9 +43,13 @@ def get_data_from_files(scaler=None, number_of_rows_to_trim=0):
             df = pd.DataFrame(scaled_features, columns=data.columns)
             df['file_number'] = int(i)
             df['gesture'] = str(gesture)
-            sheets.append(df)
 
-    return pd.concat(sheets, ignore_index=True)
+            if i < testing_files:
+                testing_data.append(df)
+            else:
+                training_data.append(df)
+
+    return pd.concat(training_data, ignore_index=True), pd.concat(testing_data, ignore_index=True)
 
 def find_highest_numbered_file(directory, full_path=False):
     """
@@ -107,10 +118,8 @@ def process_zip(gesture):
 
 def process_all_zips():
     """
-    Process all unprocessed zip files in the data directory.
-
-    This function iterates over each gesture in the DATA_DIR directory and checks if there are any unprocessed files.
-    If there are unprocessed files, it calls the `process_zip` function to extract the files
+    This function iterates over each gesture in the DATA_DIR directory and checks if there are any unprocessed zip files.
+    If there are unprocessed files, it calls the `process_zip` function to extract the files and move them to the processed directory.
 
     Parameters:
     None
