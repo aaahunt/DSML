@@ -1,0 +1,32 @@
+Title:  
+
+Abstract: 
+
+Introduction:
+***In the introduction of a research paper the  goal is to create a convincing, strong and enlightening article, which people like to read and work upon.***
+
+*** Underline the importance of the subject of the Research paper - Establish a field and present more consideration on current research and subject matter***
+
+Importance of the subject of the Research: 
+Why this paper is being written? 
+AI usage has grown over the year  and will continue to grow in the near future 
+Mostly businesses already using AI and this has lead to researcher exploring  to do more research on application of AI in diverse fields. 
+
+What is it about ? 
+gesture recognition is one such application which basically is making the computer understand how physical activities are conducted among human beings. 
+Purpose and Connection with the subject ?(Establishing a field): 
+This  gesture input to computers offers numerous benefits, including monitoring activities and vital signs, enhancing gaming experiences, and supporting applications in robotics and wearable technology. This technology enables devices to understand and react to human gestures, facilitating control and communication.
+We are using hand gesture recognition for ( choose one: robotics/ Gaming/ Sign Language translation, etc(choose from the Applications where individuals can use smartphones to collect hand gesture data? Or whatever u feel ) 
+
+Why smartphones? 
+Smartphones are widely accessible and commonly used devices. ( 54% population in the world use smartphone , but very few have smart watches. Buying another device just for 1 task is not affordable to many people or might lead to extra cost and when going out they have t take care of one more device other than their smartphones) 
+scalable - Smartphone-based data collection enables scalability, as it allows researchers, developers, or organizations to collect large datasets from a diverse population quickly and efficiently.
+Sensor Capabilities: Modern smartphones are equipped with a wide array of sensors such as accelerometers, gyroscopes, and cameras.  
+ it is  more accessible to individuals with diverse backgrounds and abilities. 
+Privacy and Ethics: Smartphone-based data collection allows for greater control over privacy and ethics considerations, as participants can have more transparency and autonomy over how their data is collected and used compared to other methods.
+
+ ***Establish a role - Oppose an existing belief, reveal a research gap or prepare a research question or a problem or continue the tradition:*** 
+Continuing the tradition: There have been many researches on hand gesture recognition using different ML and DL algorithms.  In the previous researches it has been observed that DL models(like CNN- LSTM)  have been proved to provide more accurate results towards recognitions of gesture data compared to the ML models like(SVM, KNN, Naives Bayes, Random Forest ) in both binary and multi class classification.  
+. Out of the ML models implemented by far the SVM has provided the highest accuracy compared to all other models.  
+So we are going to implement hand gesture recognition on 4 gestures (come, go, wave, circle) and   we are going to perform both ML and DL algorithm on the datasets collected to recognise gesture data for  ( choose one: robotics/ Gaming/ Sign Language translation, etc(choose from the Applications where individuals can use smartphones to collect hand gesture data? Or whatever u feel ). 
+
