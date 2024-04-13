@@ -31,6 +31,40 @@ Continuing the tradition: There have been many researches on hand gesture recogn
 So we are going to implement hand gesture recognition on 4 gestures (come, go, wave, circle) and   we are going to perform both ML and DL algorithm on the datasets collected to recognise gesture data for  ( choose one: robotics/ Gaming/ Sign Language translation, etc(choose from the Applications where individuals can use smartphones to collect hand gesture data? Or whatever u feel ). 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Review of Literature: 
+Paper 1 : Automated classification of hand gestures using a wristband and machine learning for possible application in pill intake monitoring
+Cite: 
+Sara Moccia, Sarah Solbiati, Mahshad Khornegah, Federica FS Bossi, Enrico G Caiani,
+Automated classification of hand gestures using a wristband and machine learning for possible application in pill intake monitoring,
+Computer Methods and Programs in Biomedicine,
+Volume 219,
+2022,
+106753,
+ISSN 0169-2607,
+https://doi.org/10.1016/j.cmpb.2022.106753.
+Method: 
+Both multi gesture(simultaneous classification of all gestures)  and Binary classification(drinking gesture vs all other gestures)  was performed, with specific focus on drinking gesture( to track pill taking) 
+F1 score, precision, recall  is used - to evaluate performance of a classification model
+The MetaMotionR (MMR) wrist wearable device (MBIENTLAB INC, San Francisco, CA, USA) was used to track human gestures. 
+the pipeline for gesture classification involved pre-processing, signal windowing, feature extraction (for ML methods only) and classification
+only the accelerometer and gyroscope signals were used.
+Window size = 3 sec 
+overlap = 75% 
+From each window feature extraction was performed to be utilised in ML algorithms as they require hand crafted features.
+ML algortihms: SVM, KNN, RF (implemented using Scikit- learn) , For automated feature selection : LASSO 
+DL alg: CNN, CNN-LSTM. (Implemented using Keras) 
+Validation: leave one subject out cross-validation to validate both ML and DL approaches. 
+
+Tests applied for model comparison (on f1-score, precision, recall for each model): 
+1. Non- parametric Friedman test(p < 0.05)(H0: No difference among methods) 
+2. Post-hoc Wilcoxon Signed Rank Test with Bonferroni correction (just for saftey if 1 doesn’t work) 
+ 
+Findings: 
+For ML: 
+High: SVM > KNN( for factors: precision, f1-score) 
+For DL:  CNN , CNN-LSTM > ML algorithm 
+Highest: CNN-LSTM ( for factors: precison and recall) > CNN 
+ 
+So Highest: SVM in ML , and CNN-LSTM in DL 
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Methodology: 
