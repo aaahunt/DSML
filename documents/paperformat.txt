@@ -1,7 +1,7 @@
 Title:  
-
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Abstract: 
-
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Introduction:
 ***In the introduction of a research paper the  goal is to create a convincing, strong and enlightening article, which people like to read and work upon.***
 
@@ -29,4 +29,22 @@ Privacy and Ethics: Smartphone-based data collection allows for greater control 
 Continuing the tradition: There have been many researches on hand gesture recognition using different ML and DL algorithms.  In the previous researches it has been observed that DL models(like CNN- LSTM)  have been proved to provide more accurate results towards recognitions of gesture data compared to the ML models like(SVM, KNN, Naives Bayes, Random Forest ) in both binary and multi class classification.  
 . Out of the ML models implemented by far the SVM has provided the highest accuracy compared to all other models.  
 So we are going to implement hand gesture recognition on 4 gestures (come, go, wave, circle) and   we are going to perform both ML and DL algorithm on the datasets collected to recognise gesture data for  ( choose one: robotics/ Gaming/ Sign Language translation, etc(choose from the Applications where individuals can use smartphones to collect hand gesture data? Or whatever u feel ). 
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Review of Literature: 
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Methodology: 
+Aim: To create a classification model that recognises the different gestures. 
+Data Collection: 
+NOTE: YOU MIGHT WANT TO HAVE A GENERAL MOVEMENT ARTEFACT CATEGORY TOO. 
+We have collected 4 gesture categories: 1. Moving your hand in circle, 2.Waving, 3. Gesturing”come here” , Gesturing”go away”.
+Method relies on using the tri axial accelerometer sensor fitted in the smartphone by default and data is collected using the phyphox application implementing a filter Acceleration(without g)  the gestures were analysed 
+Data was collected from the three individuals of the team and was collectively used for training and testing of the ML and DL model performing each gesture continuously for 15 times, for 8 runs each. 
+(i.e. number of dataset from each team mate were 32) with total 4 gestures and each category of gesture has 8 datasets.) 
+
+Data Exploration: 
+basic statistics like mean, median, standard deviation, etc. were fund , to understand the central tendencies and distributions of your data.
+Visualizations were plot on the raw data to understand the data better. 
+And Identifying patterns, correlations, and anomalies within the data provided valuable insights or raise important questions for further investigation.
+The accuracy of the data was checked by fitting a SVM model on the raw data.( accuracy observed: 86%) 
 
