@@ -43,7 +43,6 @@ ISSN 0169-2607,
 https://doi.org/10.1016/j.cmpb.2022.106753.
 Method: 
 Both multi gesture(simultaneous classification of all gestures)  and Binary classification(drinking gesture vs all other gestures)  was performed, with specific focus on drinking gesture( to track pill taking) 
-F1 score, precision, recall  is used - to evaluate performance of a classification model
 The MetaMotionR (MMR) wrist wearable device (MBIENTLAB INC, San Francisco, CA, USA) was used to track human gestures. 
 the pipeline for gesture classification involved pre-processing, signal windowing, feature extraction (for ML methods only) and classification
 only the accelerometer and gyroscope signals were used.
