@@ -1,1 +1,29 @@
+[Points:
+1. Afterwards, for each window, features extraction was performed to be utilized in ML algorithms, as they require 
+    handcrafted features.[1] 
+2. The classification problems were investigated by both ML and DL approaches[1] 
+3. Support Vector Machine (SVM)[1][3]  
+4. Random Forest (RF)[1]  
+5. K-Nearest Neighbour (KNN) [1] 
+6. Particularly, both DL models and SVM outperformed the KNN and RF.[1] 
+7. CNN[1] 
+8. CNN-LSTM[1] 
+] 
 
+
+Paper 2: Detecting Medication-Taking Gestures Using Machine Learning and Accelerometer Data Collected via Smartwatch Technology: Instrument Validation Study  
+[Points: 
+1. This study integrated accelerometer data from 4 different human activities [2]
+2. Network training is a process in which a ML algorithm is fed sufficient training data to learn from.[2]  
+]
+
+Paper3 : Hand gesture recognition using Multiclass Support Vector Machine 
+[Points: 
+1. With the development of technology and computing, computer is becoming more and more important in our day today 
+   life.[3] 
+2. Hand gestures can be classified in two categories: static and dynamic.[3]  
+3. HMM[3] 
+4. The idea is to extend it to multi-class problem is to decompose an M-class problem into a series of two-class 
+    problems(can be used) [3] 
+5. An efficient hand gesture recognition system requires higher class robustness, accuracy and efficiency.[3] 
+] 
