@@ -65,19 +65,35 @@ Highest: CNN-LSTM ( for factors: precison and recall) > CNN
  
 So Highest: SVM in ML , and CNN-LSTM in DL 
 
+Paper3 : Hand gesture recognition using Multiclass Support Vector Machine 
+[Points: With the development of technology and computing, computer is becoming more and more important in our day today life.[3] 
+Hand gestures can be classified in two categories: static and dynamic.[3]  
+HMM[3] 
+The idea is to extend it to multi-class problem is to decompose an M-class problem into a series of two-class problems(can be used) [3] 
+An efficient hand gesture recognition system requires higher class robustness, accuracy and efficiency.[3] 
+] 
+
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Methodology: 
-Aim: To create a classification model that recognises the different gestures. 
-Data Collection: 
-NOTE: YOU MIGHT WANT TO HAVE A GENERAL MOVEMENT ARTEFACT CATEGORY TOO. 
+Goal : Simultaneous classification of all the gestures. 
+
+data collection: NOTE: YOU MIGHT WANT TO HAVE A GENERAL MOVEMENT ARTEFACT CATEGORY TOO. 
 We have collected 4 gesture categories: 1. Moving your hand in circle, 2.Waving, 3. Gesturing”come here” , Gesturing”go away”.
 Method relies on using the tri axial accelerometer sensor fitted in the smartphone by default and data is collected using the phyphox application implementing a filter Acceleration(without g)  the gestures were analysed 
 Data was collected from the three individuals of the team and was collectively used for training and testing of the ML and DL model performing each gesture continuously for 15 times, for 8 runs each. 
 (i.e. number of dataset from each team mate were 32) with total 4 gestures and each category of gesture has 8 datasets.) 
 
-Data Exploration: 
-basic statistics like mean, median, standard deviation, etc. were fund , to understand the central tendencies and distributions of your data.
-Visualizations were plot on the raw data to understand the data better. 
-And Identifying patterns, correlations, and anomalies within the data provided valuable insights or raise important questions for further investigation.
-The accuracy of the data was checked by fitting a SVM model on the raw data.( accuracy observed: 86%) 
+preprocess: 
+Normalize
+
+spliting the data into train - validate - test: 
+(validation used:       )
+train: 80% , test: 20% (further collected a reference data to double check the model working but at the end) 
+
+sliding window technique( feature extarction from each window) 
+features extracted used to train ML and DL models 
+ML models: 
+DL models: 
+
+
 
