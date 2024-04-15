@@ -31,7 +31,7 @@ Continuing the tradition: There have been many researches on hand gesture recogn
 So we are going to implement hand gesture recognition on 4 gestures (come, go, wave, circle) and   we are going to perform both ML and DL algorithm on the datasets collected to recognise gesture data for  ( choose one: robotics/ Gaming/ Sign Language translation, etc(choose from the Applications where individuals can use smartphones to collect hand gesture data? Or whatever u feel ). 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Review of Literature: 
-Paper 1 : Automated classification of hand gestures using a wristband and machine learning for possible application in pill intake monitoring
+Paper 1(closely related paper)  : Automated classification of hand gestures using a wristband and machine learning for possible application in pill intake monitoring
 Cite: 
 Sara Moccia, Sarah Solbiati, Mahshad Khornegah, Federica FS Bossi, Enrico G Caiani,
 Automated classification of hand gestures using a wristband and machine learning for possible application in pill intake monitoring,
@@ -65,14 +65,6 @@ Highest: CNN-LSTM ( for factors: precison and recall) > CNN
  
 So Highest: SVM in ML , and CNN-LSTM in DL 
 
-Paper3 : Hand gesture recognition using Multiclass Support Vector Machine 
-[Points: With the development of technology and computing, computer is becoming more and more important in our day today life.[3] 
-Hand gestures can be classified in two categories: static and dynamic.[3]  
-HMM[3] 
-The idea is to extend it to multi-class problem is to decompose an M-class problem into a series of two-class problems(can be used) [3] 
-An efficient hand gesture recognition system requires higher class robustness, accuracy and efficiency.[3] 
-] 
-
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Methodology: 
 Goal : Simultaneous classification of all the gestures. 
@@ -92,7 +84,7 @@ train: 80% , test: 20% (further collected a reference data to double check the m
 
 sliding window technique( feature extarction from each window) 
 features extracted used to train ML and DL models 
-ML models: 
+ML models: SVM[1][3] 
 DL models: 
 
 
