@@ -19,3 +19,4 @@ Yu, Yi et al. “Exploration of Chinese Sign Language Recognition Using Wearable
 
 Han H, Yoon SW. Gyroscope-Based Continuous Human Hand Gesture Recognition for Multi-Modal Wearable Input Device for Human Machine Interaction. Sensors (Basel). 2019 Jun 5;19(11):2562. doi: 10.3390/s19112562. https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6603535/
 
+Stancic, I. et al. (2022) ‘Comparison and Evaluation of Machine Learning-Based Classification of Hand Gestures Captured by Inertial Sensors’, Computation, 10(9), p. 159. Available at: https://doi.org/10.3390/computation10090159.
