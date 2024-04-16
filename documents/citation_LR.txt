@@ -27,3 +27,11 @@ Paper3 : Hand gesture recognition using Multiclass Support Vector Machine
     problems(can be used) [3] 
 5. An efficient hand gesture recognition system requires higher class robustness, accuracy and efficiency.[3] 
 ] 
+
+Paper4: Hand Gesture recognition using K-means clustering and Support Vector Machine
+[Points:
+Hand gestures as media for communication can deliver message to achieve information[4]
+ V.N. Vapnik’s SVM has been proved both theoretically and practically to be a successful machine learning model in classification and regression [4] 
+Multiclass SVM is an expansion of the binary classification introduced by Vapnik.[4]
+Multiclass proposes DDAG strategy for classifying. [4] 
+] 
