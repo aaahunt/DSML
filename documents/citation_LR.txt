@@ -51,4 +51,12 @@ The activation function used in this layer is Rectified Linear Unit (ReLU). ReLU
 The library Keras was used for building the CNN classifier.[1][6] 
  We can say after this research that CNN is a data driven methodology and data augmentation has a huge effect in deep learning.[6] 
 
+Paper7: A Hidden  Markov Model-Based Continuous Gesture Recognition System for Hand Motion Trajectory 
+
+Paper8: Static Hand Gesture Recognition using Mixture of Features and SVM classifier 
+
+Paper 9: Static hand gesture recognition using an android device 
+[Points:
+To extract the features of air gesture we used statistical technique which is Principal Component Analysis (PCA). 
+Gesture Recognition is a way for machines to understand human body language, thus bridging a gap between machines and humans.]
 
