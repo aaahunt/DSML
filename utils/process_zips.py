@@ -12,8 +12,10 @@ def get_columns():
     return ['time', 'accel_x', 'accel_y', 'accel_z', 'accel_abs']
 
 def get_gesture_csvs(gesture):
-      gesture_dir = os.path.join(DATA_DIR, gesture)
-      return [file for file in os.listdir(gesture_dir) if file.endswith('.csv')]
+    if not os.path.exists(gesture_dir):
+        os.makedirs(gesture_dir)
+    gesture_dir = os.path.join(DATA_DIR, gesture)
+    return [file for file in os.listdir(gesture_dir) if file.endswith('.csv')]
 
 def find_highest_numbered_file(directory, full_path=False):
     highest_number = -1
