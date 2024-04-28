@@ -7,5 +7,34 @@ Introduction:
 Making a computer understand human gesture is a step towards it[3].Gesture recognition pertains to recognizing meaning- ful expressions of motion by a human, involving the hands, arms, face, head, and/or body[20]. With a variety of application across different fields including monitoring activities and vital signs, enhancing gaming experience, and supporting applications in robotics and wearable technology. Our  intent is to use smartphones which is a practically used device to establish  communication possibilities between humans and machines differing from the traditional data collection methods. we further explore the usage of this technology to create accessibility features for individuals with disabilities which could be a potential project within the scope of man machine interaction.
  In recent years, gesture recognition system has become very popular in the field of research, especially facial and hand gesture recognition system[3] gesture classification for hand movement can be classified into static and dynamic depending on the data acquisition method.  In the past a significant amount of research has been carried out which investigates machine algorithms like Support Vector Machine[1][3] , Random Forest[1] , Hidden Markov Model which analyses data to discover patterns. A  few Deep Learning models like CNN[1][6] and some hybrid models like CNN-LSTM[1] mostly focusing on  image processing, which has now made it a common subject in the domain. However a limited amount of research focuses on using signal data collected as a .dataset(.csv file)  using a normally accessible device among humans today. 
 
+References (used by Shreeya) 
+[1]Sara Moccia, Sarah Solbiati, Mahshad Khornegah, Federica FS Bossi, Enrico G Caiani,
+Automated classification of hand gestures using a wristband and machine learning for possible application in pill intake monitoring,
+Computer Methods and Programs in Biomedicine,
+Volume 219,
+2022,
+106753,
+ISSN 0169-2607,
+https://doi.org/10.1016/j.cmpb.2022.106753.
+(https://www.sciencedirect.com/science/article/pii/S0169260722001390)
+
+[2]Odhiambo CO, Ablonczy L, Wright PJ, Corbett CF, Reichardt S, Valafar H. Detecting Medication-Taking Gestures Using Machine Learning and Accelerometer Data Collected via Smartwatch Technology: Instrument Validation Study. JMIR Hum Factors. 2023 May 4;10:e42714. doi: 10.2196/42714. PMID: 37140971; PMCID: PMC10196892.
+
+[3] HafizurRahman, Md & Afrin, Jinia. (2013). Hand Gesture Recognition using Multiclass Support Vector Machine. International Journal of Computer Applications. 74. 39-43. 10.5120/12852-9367.
+
+[4] Anggi Maharani, Devira & Fakhrurroja, Hanif & Riyanto, Riyanto & Machbub, Carmadi. (2018). Hand gesture recognition using K-means clustering and Support Vector Machine. 1-6. 10.1109/ISCAIE.2018.8405435. 
+
+[5]Yanghee Nam and KwangYun Wohn. 1996. Recognition of space-time hand-gestures using hidden Markov model. In Proceedings of the ACM Symposium on Virtual Reality Software and Technology (VRST '96). Association for Computing Machinery, New York, NY, USA, 51–58. https://doi.org/10.1145/3304181.3304193 
+
+[6] M. Z. Islam, M. S. Hossain, R. ul Islam and K. Andersson, "Static Hand Gesture Recognition using Convolutional Neural Network with Data Augmentation," 2019 Joint 8th International Conference on Informatics, Electronics & Vision (ICIEV) and 2019 3rd International Conference on Imaging, Vision & Pattern Recognition (icIVPR), Spokane, WA, USA, 2019, pp. 324-329, doi: 10.1109/ICIEV.2019.8858563. keywords: {Feature extraction;Gesture recognition;Data models;Shape;Image recognition;Training;Neurons;Convolutional Neural Network;Static hand gestures character recognition;Data augmentation},
+
+[7]D. K. Ghosh and S. Ari, "Static Hand Gesture Recognition Using Mixture of Features and SVM Classifier," 2015 Fifth International Conference on Communication Systems and Network Technologies, Gwalior, India, 2015, pp. 1094-1099, doi: 10.1109/CSNT.2015.18. keywords: {Communication systems;American sign language (ASL) hand alphabet;combined features;localized contour sequences (LCS);principal component;static hand gesture;support vector machine (SVM)},
+
+[16]Mitra, Sushmita & Acharya, Tinku. (2007). Gesture Recognition: A Survey. Systems, Man, and Cybernetics, Part C: Applications and Reviews, IEEE Transactions on. 37. 311 - 324. 10.1109/TSMCC.2007.893280. 
+
+
+#there are a few more. I will add them tmrw 
+
+
 
 
